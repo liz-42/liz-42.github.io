@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Publications
+title: About
 ---
 
-{% assign pubs = site.publications | sort: "year" | reverse %}
-{% for pub in pubs %}
-### [{{ pub.title }}]({{ pub.url | relative_url }})
-{{ pub.authors | join: ", " }}
-*{{ pub.venue }}, {{ pub.year }}*
-{% endfor %}
+Hi, I'm Elizabeth, a Ph.D. candidate at the University of Victoria studying social technology. My work focuses on creating more positive experiences for people when they interact with others online, either by mitigating negative experiences (e.g., through tools to detect or manage toxic behaviour and harassment in multiplayer games) or through the design of novel technologies to support social connection and improve wellbeing. 
+
+**Contact:** [email](mailto:lizreid@uvic.ca) · [LinkedIn](https://linkedin.com/in/elizabethreid42)
+
+[See my publications →]({{ '/publications/' | relative_url }})

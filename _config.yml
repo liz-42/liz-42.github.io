@@ -3,7 +3,8 @@ description: Research publications
 theme: minima
 
 header_pages:
-  - about.md
+  - index.md
+  - publications.md
 
 collections:
   publications:
