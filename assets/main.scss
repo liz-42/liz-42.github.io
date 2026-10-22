@@ -34,3 +34,40 @@
 .footer-icons a:hover {
   color: #2a7ae2;
 }
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text > :first-child {
+  margin-top: 0;
+}
+
+.about-text > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-photo {
+    width: 160px;
+    height: 160px;
+  }
+}
