@@ -5,7 +5,7 @@ authors:
   - Laura Paul
   - Rafael Alves Heinze
   - Regan L. Mandryk
-venue: Proceedings of the ACM on Human-Computer Interaction
+venue: Proceedings of the ACM on Human-Computer Interaction (CHI PLAY)
 year: 2025
 doi: https://doi.org/10.1145/3748611
 

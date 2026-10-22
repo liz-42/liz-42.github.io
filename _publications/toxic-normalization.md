@@ -1,12 +1,12 @@
 ---
 title: "Don’t you know that you’re toxic: Normalization of toxicity in online gaming"
 authors:
-  - Nicole A Beres
+  - Nicole A. Beres
   - Julian Frommel
   - Elizabeth Reid
   - Regan L. Mandryk
   - Madison Klarkowski
-venue: Proceedings of the 2021 CHI conference on human factors in computing systems
+venue: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems
 year: 2021
 doi: https://doi.org/10.1145/3411764.3445157
 
