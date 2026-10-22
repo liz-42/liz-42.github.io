@@ -14,7 +14,13 @@ permalink: /publications/
       <p class="pub-venue"><em>{{ pub.venue }}</em>, {{ pub.year }}</p>
     </div>
     <div class="pub-buttons">
-      <a class="btn" href="{{ pub.url | relative_url }}">Abstract & Video</a>
+      <a class="btn" href="{{ pub.url | relative_url }}">
+  {%- if pub.video -%}
+    Abstract & Video
+  {%- else -%}
+    Abstract
+  {%- endif -%}
+</a>
       {%- if pub.doi -%}
       <a class="btn" href="{{ pub.doi }}" target="_blank" rel="noopener">Read Paper</a>
       {%- endif -%}
