@@ -35,46 +35,22 @@
   color: #2a7ae2;
 }
 
-:root {
-  --about-photo: 220px;
-}
-
-.about {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
 .about-photo {
-  width: var(--about-photo);
-  height: var(--about-photo);
+  display: block;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 50%;
-  flex-shrink: 0;
+  margin: 0.5rem auto 1.5rem;
 }
 
-.about-text {
-  flex: 1;
-}
-
-.about-text > :first-child { margin-top: 0; }
-.about-text > :last-child { margin-bottom: 0; }
-
-/* Center the "About" heading over the photo (About page only) */
-article.post:has(.about) .post-header {
-  width: var(--about-photo);
-  text-align: center;
+.about-text > :last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
-  :root {
-    --about-photo: 160px;
-  }
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
-  article.post:has(.about) .post-header {
-    width: auto;
+  .about-photo {
+    width: 160px;
+    height: 160px;
   }
 }
