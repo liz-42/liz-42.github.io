@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="publication">
+  <h1>{{ page.title }}</h1>
+  <p class="authors">{{ page.authors | join: ", " }}</p>
+  <p class="venue"><em>{{ page.venue }}</em>, {{ page.year }}</p>
+
+  <h2>Abstract</h2>
+  <p>{{ page.abstract }}</p>
+
+  {% for id in page.videos %}
+  <div class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ id }}"
+            title="Video for {{ page.title }}"
+            allow="accelerometer; encrypted-media; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+  </div>
+  {% endfor %}
+
+  <p>
+    {% if page.doi %}<a href="{{ page.doi }}">Paper (DOI)</a>{% endif %}
+  </p>
+</article>

@@ -1,0 +1,18 @@
+title: Elizabeth Reid
+description: Research publications
+theme: minima
+
+header_pages:
+  - about.md
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publication
