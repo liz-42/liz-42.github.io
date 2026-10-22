@@ -15,7 +15,7 @@ permalink: /publications/
     </div>
     <div class="pub-buttons">
       <a class="btn" href="{{ pub.url | relative_url }}">
-  {%- if pub.video -%}
+  {%- if pub.videos -%}
     Abstract & Video
   {%- else -%}
     Abstract
