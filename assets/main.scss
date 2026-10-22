@@ -35,6 +35,10 @@
   color: #2a7ae2;
 }
 
+:root {
+  --about-photo: 220px;
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -42,8 +46,8 @@
 }
 
 .about-photo {
-  width: 220px;
-  height: 220px;
+  width: var(--about-photo);
+  height: var(--about-photo);
   object-fit: cover;
   border-radius: 50%;
   flex-shrink: 0;
@@ -53,21 +57,24 @@
   flex: 1;
 }
 
-.about-text > :first-child {
-  margin-top: 0;
-}
+.about-text > :first-child { margin-top: 0; }
+.about-text > :last-child { margin-bottom: 0; }
 
-.about-text > :last-child {
-  margin-bottom: 0;
+/* Center the "About" heading over the photo (About page only) */
+article.post:has(.about) .post-header {
+  width: var(--about-photo);
+  text-align: center;
 }
 
 @media (max-width: 600px) {
+  :root {
+    --about-photo: 160px;
+  }
   .about {
     flex-direction: column;
     text-align: center;
   }
-  .about-photo {
-    width: 160px;
-    height: 160px;
+  article.post:has(.about) .post-header {
+    width: auto;
   }
 }
